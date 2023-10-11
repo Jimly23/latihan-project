@@ -5,10 +5,11 @@ class Login:
         self.password = password
 
     def show(self):
-        print(f"Username : {self.username}\nEmail : {self.email}\nPassword : {self.password}")
+        return f"Username : {self.username}\nEmail : {self.email}\nPassword : {self.password}"
+
 
 username = input("Input your username : ")
 email = input("Input your email : ")
 password = input("Input your password : ")
 user = Login(username,email,password)
-user.show()
+print(user.show())
